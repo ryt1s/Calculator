@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Calculator Functions</title>
+</head>
+<body>
+  <script>
+    // Basic math operator functions
+    function add(a, b) {
+      return a + b;
+    }
+
+    function subtract(a, b) {
+      return a - b;
+    }
+
+    function multiply(a, b) {
+      return a * b;
+    }
+
+    function divide(a, b) {
+      if (b === 0) {
+        return 'Error: Cannot divide by zero';
+      }
+      return a / b;
+    }
+
+    // Testing (open console with F12 or Ctrl+Shift+I)
+    console.log(add(5, 3));       // 8
+    console.log(subtract(10, 4)); // 6
+    console.log(multiply(2, 6));  // 12
+    console.log(divide(12, 4));   // 3
+    console.log(divide(5, 0));    // Error message
+  </script>
+</body>
+</html>
